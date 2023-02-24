@@ -7,16 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PcShop | Inicio</title>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Basic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
+
     <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo">PcShop</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+
         <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x-lg"></i>
+            </button>
             <header>
-                <a href="./index.html"><img class="logo" src="./img/PcShop.png" alt=""></a>
+                <a href="./index.html"><img class="icono" src="./img/PcShop.png" alt=""></a>
             </header>
             <nav>
                 <ul class="menu">
@@ -38,15 +49,24 @@
                             Procesadores</button>
                     </li>
                     <li>
+                        <button id="motherboards" class="boton-menu boton-categoria"><i class="bi bi-motherboard-fill"></i>
+                            Motherboards</button>
+                    </li>
+                    <li>
+                        <button id="almacenamiento" class="boton-menu boton-categoria"><i class="bi bi-device-hdd-fill"></i>
+                            Almacenamiento</button>
+                    </li>
+                    <li>
                         <a class="boton-menu boton-carrito" href="./carrito.html"><i class="bi bi-cart-fill"></i>
                             Carrito <span id="numerito" class="numerito">0</span></a>
                     </li>
                 </ul>
             </nav>
             <footer>
-                <p class="texto-footer"> -PcShop- Todos los derechos reservados</p>
+                <p class="texto-footer"> Todos los derechos reservados</p>
             </footer>
         </aside>
+
         <main>
             <h2 id="titulo-principal" class="titulo-principal">Todos los productos</h2>
             <div id="contenedor-productos" class="contenedor-productos">
@@ -55,9 +75,8 @@
         </main>
     </div>
 
-
     <script src="js/main.js"></script>
-    <script src="./js/carrito.js"></script>
+    <script src="./js/menu.js" ></script>
 </body>
 
 </html>
