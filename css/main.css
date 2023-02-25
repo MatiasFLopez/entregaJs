@@ -3,7 +3,6 @@
     --clr-main-light: #4daddf;
     --clr-white: #ececec;
     --clr-gray: #e2e2e2;
-    --clr-red: #961818;
 }
 
 * {
@@ -195,7 +194,7 @@ main {
 .carrito-producto-eliminar {
     border: 0;
     background-color: transparent;
-    color: var(--clr-red);
+    color: var(--clr-main-light);
     cursor: pointer;
 }
 
@@ -206,10 +205,10 @@ main {
 
 .carrito-acciones-vaciar {
     border: 0;
-    background-color: var(--clr-gray);
+    background-color: var(--clr-main-light);
     padding: 1rem;
     border-radius: 1rem;
-    color: var(--clr-main);
+    color: var(--clr-white);
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -220,6 +219,7 @@ main {
 
 .carrito-acciones-total {
     display: flex;
+    flex-wrap: wrap;
     background-color: var(--clr-gray);
     padding: 1rem;
     color: var(--clr-main);
